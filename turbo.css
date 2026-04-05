@@ -148,3 +148,32 @@ body {
     font-size: 12px;
     color: #bcbecc;
 }
+
+@media (min-width: 1400px) {
+    .car-card {
+        flex: 0 0 calc(20% - 20px); 
+    }
+}
+
+
+@media (max-width: 992px) {
+    .car-card {
+        flex: 0 0 calc(33.33% - 20px); 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .car-card {
+        flex: 0 0 calc(50% - 20px); 
+    }
+    .container { height: auto; padding: 15px; } 
+}
+
+
+@media (max-width: 480px) {
+    .car-card {
+        flex: 0 0 100%;
+    }
+    .inside, .inside2 { flex-direction: column; } 
+}
