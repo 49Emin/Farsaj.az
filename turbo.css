@@ -88,16 +88,16 @@ body {
 
 .card-wrapper {
     display: flex;
-    flex-wrap: wrap; /* Əgər 4-dən çox olsa, növbəti sətirə keçsin */
-    gap: 20px;       /* Kartlar arası məsafə */
+    flex-wrap: wrap; 
+    gap: 20px;       
 }
 
 .car-card {
-    /* 4 ədəd yan-yana olması üçün (100% / 4) - boşluqlar */
+    
     flex: 0 0 calc(25% - 15px); 
     background-color: white;
     border-radius: 10px;
-    overflow: hidden; /* Şəkillərin küncləri kəsilsin */
+    overflow: hidden; 
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     cursor: pointer;
 }
@@ -105,13 +105,13 @@ body {
 .img-container {
     position: relative;
     width: 100%;
-    height: 180px; /* Bütün şəkillər mütləq bu hündürlükdə olacaq */
+    height: 180px; 
 }
 
 .img-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Şəkilləri dartmır, səliqəli kəsib yerləşdirir */
+    object-fit: cover; 
 }
 
 .heart {
