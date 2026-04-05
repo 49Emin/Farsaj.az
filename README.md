@@ -16,5 +16,5 @@ This project is one of my first experiences in web development. My goal is to re
 2. Open the `index.html` file in any modern web browser.
 
 ## 👨‍💻 About Me
-I am a 1st year student of Azerbaijan Oil and Industry University and my major is mechatronics and robotics engineering 
+I am a 1st year student of Azerbaijan State Oil and Industry University and my major is mechatronics and robotics engineering 
 I am on the way to becoming a full stack developer
