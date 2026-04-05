@@ -1,0 +1,150 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f7f8;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.container {
+    display: flex;
+    background-color: #ca1016;
+    color: white;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 15px;
+    border-radius: 8px;
+}
+
+.container h1 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+.container h3 { font-size: 14px; font-weight: normal; cursor: pointer; white-space: nowrap; }
+
+
+.inside, .inside2 {
+    display: flex;
+    gap: 10px; 
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+.inside > select, 
+.inside > .filter-row, 
+.inside2 > input, 
+.inside2 > select {
+    flex: 1; 
+    height: 48px;
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    padding: 0 10px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box; 
+}
+
+
+.filter-row {
+    display: flex;
+    border: none !important; 
+    padding: 0 !important;
+}
+
+.filter-row button {
+    flex: 1;
+    height: 100%;
+    border: 1px solid #d8d8d8;
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.filter-row button:first-child { border-radius: 8px 0 0 8px; }
+.filter-row button:last-child { border-radius: 0 8px 8px 0; }
+.filter-row button:not(:first-child) { border-left: none; }
+
+.filter-row .active {
+    background-color: #ca1016;
+    color: white;
+    border-color: #ca1016;
+}
+.premium-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 10px;
+}
+
+.premium-container h2 {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Əgər 4-dən çox olsa, növbəti sətirə keçsin */
+    gap: 20px;       /* Kartlar arası məsafə */
+}
+
+.car-card {
+    /* 4 ədəd yan-yana olması üçün (100% / 4) - boşluqlar */
+    flex: 0 0 calc(25% - 15px); 
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden; /* Şəkillərin küncləri kəsilsin */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+    height: 180px; /* Bütün şəkillər mütləq bu hündürlükdə olacaq */
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Şəkilləri dartmır, səliqəli kəsib yerləşdirir */
+}
+
+.heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.car-info {
+    padding: 12px;
+}
+
+.price {
+    font-size: 19px;
+    font-weight: bold;
+    color: #111;
+}
+
+.model {
+    font-size: 15px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.year-engine {
+    font-size: 13px;
+    color: #8d94ad;
+    margin-bottom: 8px;
+}
+
+.date {
+    font-size: 12px;
+    color: #bcbecc;
+}
